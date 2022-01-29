@@ -12,6 +12,8 @@ class cog_commands(commands.Cog):
         self.YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist':'True'}
         self.FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
         self.voice = ""
+        self.sad_words = ["sad", "depressed", "unhappy", "angry", "miserable", "depressing"]
+        self.starter_encouragements = ["Cheer up!", "Hang in there.", "You are a great person / bot!"]
         self.greeting_message = "Hey there! I am your new music assistant!!"
         self.help_message = """
 !help - Shows this message

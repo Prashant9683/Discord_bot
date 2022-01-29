@@ -9,4 +9,5 @@ client.remove_command('help')
 
 client.add_cog(cog_commands(client))
 
-client.run("TOKEN")
+TOKEN = os.getenv("BOT_TOKEN")
+client.run(TOKEN)
